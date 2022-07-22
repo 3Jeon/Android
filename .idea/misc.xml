@@ -28,11 +28,16 @@
         <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_findpw.xml" value="0.358695652173913" />
         <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_home.xml" value="0.358695652173913" />
         <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_login.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_main.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_makeaccount.xml" value="0.358695652173913" />
         <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_mymenu.xml" value="0.358695652173913" />
         <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_result.xml" value="0.358695652173913" />
         <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_signup.xml" value="0.358695652173913" />
         <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_store.xml" value="0.358695652173913" />
         <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_success.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/activity_successaccount.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/item_menu.xml" value="0.358695652173913" />
+        <entry key="..\:/Users/userpc/threejeon/app/src/main/res/layout/item_store.xml" value="0.5" />
       </map>
     </option>
   </component>
