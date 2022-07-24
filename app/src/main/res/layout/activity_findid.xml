@@ -13,7 +13,6 @@
         app:layout_constraintGuide_begin="100dp" />
 
     <TextView
-        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="아이디 찾기"
@@ -57,7 +56,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="200dp" />
+        tools:layout_editor_absoluteY="200dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button"
@@ -70,7 +70,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="280dp" />
+        tools:layout_editor_absoluteY="280dp"
+        tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.Barrier
         android:layout_width="wrap_content"
@@ -99,7 +100,7 @@
         tools:layout_editor_absoluteY="471dp" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/findid_user_id_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="smpark0213"
@@ -111,7 +112,7 @@
         tools:layout_editor_absoluteY="506dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/findid_go_login_btn"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:background="00ff0000"

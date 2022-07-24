@@ -6,7 +6,6 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3전"
@@ -19,7 +18,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/login_id"
+        android:id="@+id/login_id_et"
         android:layout_width="294dp"
         android:layout_height="38dp"
         android:ems="10"
@@ -28,10 +27,11 @@
         android:background="#EEEEEE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="225dp" />
+        tools:layout_editor_absoluteY="225dp"
+        tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/login_pw"
+        android:id="@+id/login_pw_et"
         android:layout_width="294dp"
         android:layout_height="38dp"
         android:ems="10"
@@ -40,7 +40,8 @@
         android:background="#EEEEEE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="270dp" />
+        tools:layout_editor_absoluteY="270dp"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/login_btn"
@@ -56,7 +57,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/search_id"
+        android:id="@+id/login_search_id"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:layout_marginStart="72dp"
@@ -70,7 +71,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/search_pw"
+        android:id="@+id/login_search_pw"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
         android:background="00ff0000"
@@ -79,7 +80,7 @@
         android:textColor="#C0C0C0"
         android:textSize="12dp"
 
-        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintTop_toBottomOf="@+id/login_btn"
         tools:layout_editor_absoluteX="161dp"
         tools:ignore="MissingConstraints" />
 
@@ -97,30 +98,5 @@
         tools:ignore="MissingConstraints" />
 
 
-    <EditText
-        android:id="@+id/password_editText"
-        android:layout_width="294dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:inputType="textPassword"
-        android:hint="    비밀번호"
-        android:background="#EEEEEE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="270dp"
-        tools:ignore="MissingConstraints" />
-
-    <EditText
-        android:id="@+id/id_editText"
-        android:layout_width="294dp"
-        android:layout_height="38dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="    아이디"
-        android:background="#EEEEEE"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="225dp"
-        tools:ignore="MissingConstraints" />
         
 </androidx.constraintlayout.widget.ConstraintLayout>
