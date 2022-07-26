@@ -35,7 +35,7 @@
         android:layout_marginBottom="471dp"
         android:text="주변에 치킨집이 없어요"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:text="오늘은 다른걸 먹어보는게 어떨까요?"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="@+id/no_food_zone"
         app:layout_constraintStart_toStartOf="@id/no_food_zone"
         app:layout_constraintTop_toBottomOf="@id/no_food_zone" />
@@ -63,14 +63,14 @@
         app:srcCompat="@drawable/crying_character" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/returnMenu"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginBottom="33dp"
         android:background="@drawable/round_button_choice"
         android:text="돌아가기"
         android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

@@ -34,7 +34,7 @@
                 android:layout_marginStart="70dp"
                 android:text="BBQ 강북스타삼양점"
                 android:textColor="@color/black"
-                android:textSize="19dp"
+                android:textSize="19sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="@id/store_item_img"
                 app:layout_constraintStart_toEndOf="@id/store_item_img"

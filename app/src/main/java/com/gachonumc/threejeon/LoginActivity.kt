@@ -21,5 +21,20 @@ class LoginActivity : AppCompatActivity() {
             val mIntent = Intent(this, SuccessAccountActivity::class.java)
             startActivity(mIntent)
         }
+
+        binding.findId.setOnClickListener{
+            val mIntent = Intent(this, FindIdActivity::class.java)
+            startActivity(mIntent)
+        }
+
+        binding.findPw.setOnClickListener{
+            val mIntent = Intent(this, FindPwActivity::class.java)
+            startActivity(mIntent)
+        }
+
+        binding.loginBtn.setOnClickListener{
+            val mIntent = Intent(this, HomeActivity::class.java)
+            startActivity(mIntent)
+        }
     }
 }

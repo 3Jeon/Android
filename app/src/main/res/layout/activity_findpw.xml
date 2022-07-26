@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:text="해당 이메일과 아이디가 일치하지 않습니다."
         android:textColor="#FF0000"
-        android:textSize="12dp"
+        android:textSize="12sp"
         tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="318dp" />
 
@@ -96,19 +96,19 @@
         android:layout_height="wrap_content"
         android:text="해당 이메일로 임시 비밀번호를 전송하였습니다."
         android:textColor="#0000FF"
-        android:textSize="12dp"
+        android:textSize="12sp"
         tools:layout_editor_absoluteX="49dp"
         tools:layout_editor_absoluteY="345dp" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/go_Login"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginBottom="33dp"
         android:background="@drawable/round_button_choice"
         android:text="로그인 하러 가기"
         android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"

@@ -35,7 +35,7 @@
                 android:layout_marginTop="21dp"
                 android:text="핫황금올리브치킨 크리스피"
                 android:textColor="@color/black"
-                android:textSize="19dp"
+                android:textSize="19sp"
                 app:layout_constraintStart_toEndOf="@+id/menu_item_img"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -46,7 +46,7 @@
                 android:layout_marginTop="6dp"
                 android:text="20,000원"
                 android:textColor="@color/black"
-                android:textSize="19dp"
+                android:textSize="19sp"
                 app:layout_constraintStart_toStartOf="@+id/menu_item_name"
                 app:layout_constraintTop_toBottomOf="@+id/menu_item_name" />
 
@@ -59,7 +59,7 @@
                 android:layout_marginBottom="21dp"
                 android:text="장바구니에 추가"
                 android:textColor="#6A6A6A"
-                android:textSize="12dp"
+                android:textSize="12sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />

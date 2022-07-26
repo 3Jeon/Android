@@ -17,7 +17,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="3전"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:letterSpacing="0"
@@ -42,7 +42,7 @@
         android:layout_marginEnd="330dp"
         android:text="이메일"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +55,7 @@
         android:layout_marginStart="7dp"
         android:text="사용 가능합니다."
         android:textColor="#0000FF"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/textView4"
         app:layout_constraintStart_toEndOf="@+id/textView4"
         app:layout_constraintTop_toTopOf="@+id/textView4" />
@@ -67,7 +67,7 @@
         android:layout_marginTop="8dp"
         android:text="비밀번호 확인"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
@@ -79,7 +79,7 @@
         android:layout_marginTop="8dp"
         android:text="아이디"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
@@ -93,7 +93,7 @@
         android:ems="10"
         android:hint="  아이디"
         android:inputType="textEmailAddress"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
@@ -104,7 +104,7 @@
         android:layout_marginTop="8dp"
         android:text="비밀번호는 6~11자의 영문, 숫자 조합으로 해주세요."
         android:textColor="#FF0000"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/enter_password" />
 
@@ -115,7 +115,7 @@
         android:layout_marginTop="8dp"
         android:text="이미 존재하는 ID입니다."
         android:textColor="#FF0000"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/enter_id" />
 
@@ -128,7 +128,7 @@
         android:ems="10"
         android:hint="  비밀번호(6~11자리의 영문, 숫자조합)"
         android:inputType="textEmailAddress"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -139,8 +139,7 @@
         android:layout_marginTop="8dp"
         android:text="추후 설정에서 변경 가능합니다."
         android:textColor="#6A6A6A"
-
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
 
@@ -151,7 +150,7 @@
         android:layout_marginTop="8dp"
         android:text="기본 위치를 설정해주세요!"
         android:textColor="#000000"
-        android:textSize="20dp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
@@ -165,7 +164,7 @@
         android:ems="10"
         android:hint="  이메일 입력"
         android:inputType="textEmailAddress"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView1" />
 
@@ -177,7 +176,7 @@
         android:background="@drawable/round_button_choice"
         android:text="중복확인"
         android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/enter_id"
         app:layout_constraintStart_toEndOf="@+id/enter_id"
         app:layout_constraintTop_toTopOf="@+id/enter_id" />
@@ -189,7 +188,7 @@
         android:layout_marginTop="8dp"
         android:text="비밀번호가 일치하지 않습니다."
         android:textColor="#FF0000"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/check_password" />
 
@@ -200,7 +199,7 @@
         android:layout_marginTop="8dp"
         android:text="아이디를 찾는 경우에 활용하는 이메일입니다. 오타가 있는지 확인해주세요!"
         android:textColor="#6A6A6A"
-        android:textSize="12dp"
+        android:textSize="12sp"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/enter_email" />
 
@@ -213,7 +212,7 @@
         android:ems="10"
         android:hint="  ex) 00시 00구 00로"
         android:inputType="textEmailAddress"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
@@ -226,7 +225,7 @@
         android:ems="10"
         android:hint="  비밀번호 확인"
         android:inputType="textEmailAddress"
-        android:textSize="14dp"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -237,7 +236,7 @@
         android:layout_marginTop="8dp"
         android:text="비밀번호"
         android:textColor="@color/black"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@+id/textView1"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -251,14 +250,14 @@
 
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/successAccount"
         android:layout_width="324dp"
         android:layout_height="56dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/round_button_choice"
         android:text="회원가입"
         android:textColor="@color/white"
-        android:textSize="16dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
