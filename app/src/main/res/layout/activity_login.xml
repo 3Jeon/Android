@@ -44,8 +44,8 @@
         android:hint="    비밀번호"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/login_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/login_id"
+        app:layout_constraintStart_toStartOf="@+id/login_id" />
 
     <Button
         android:id="@+id/login_btn"
@@ -57,8 +57,8 @@
         android:text="확인"
         android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@+id/search_pw"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/login_id"
+        app:layout_constraintStart_toStartOf="@+id/login_id"
         tools:ignore="MissingConstraints" />
 
     <Button
