@@ -14,7 +14,7 @@ class MenuAdapter() : RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
 
         val binding = ItemStoreBinding.inflate(LayoutInflater.from(parent.context), parent,false)
-        return ViewHolder(binding)/
+        return ViewHolder(binding)
     }
 
     //뷰홀더에 데이터 바인딩
