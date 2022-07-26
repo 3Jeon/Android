@@ -28,7 +28,9 @@
         <activity android:name=".ChoiceMenuActivity"/>
         <activity android:name=".MyMenuActivity"/>
         <activity android:name=".ResultActivity"/>
-
+        <activity android:name=".FailActivity"/>
+        <activity android:name=".MakeaccountActivity"/>
+        <activity android:name=".SuccessAccountActivity"/>
 
     </application>
 
