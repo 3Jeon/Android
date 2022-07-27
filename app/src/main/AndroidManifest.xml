@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.gachonumc.threejeon">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -29,7 +32,6 @@
         <activity android:name=".MyMenuActivity"/>
         <activity android:name=".ResultActivity"/>
         <activity android:name=".FailActivity"/>
-        <activity android:name=".MakeaccountActivity"/>
         <activity android:name=".SuccessAccountActivity"/>
 
     </application>

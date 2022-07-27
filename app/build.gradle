@@ -47,4 +47,8 @@ dependencies {
 
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.0'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.0'
+
+    implementation 'com.squareup.retrofit2:retrefit:2.7.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.2'
+
 }
