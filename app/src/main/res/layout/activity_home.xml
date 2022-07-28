@@ -53,7 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="지금 먹고싶은 음식종류는?"
-        android:textSize="25dp"
+        android:textSize="25sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/home_address_tv"
@@ -231,18 +231,18 @@
 
 <!--대충 위치만 잡아두겟서 검은색 버튼을 분명히 만들었을테니까-->
     <Button
-        android:id="@+id/home_button_next"
+        android:id="@+id/button6"
         android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:text="가게리스트 불러오기"
+        android:layout_height="48dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/round_button_choice"
+        android:text="가게 리스트 불러오기"
         android:textColor="@color/white"
-        android:textSize="18dp"
-        android:background="@drawable/round_button"
-        android:bottomLeftRadius="12dp"
-        android:layout_marginBottom="30dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 

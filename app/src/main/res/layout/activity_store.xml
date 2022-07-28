@@ -16,13 +16,15 @@
             android:layout_width="match_parent"
             android:layout_height="50dp">
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/store_back_iv"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/back"
+                android:src="@drawable/back_hd"
+                android:background="#00FF0000"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
@@ -33,24 +35,27 @@
                 android:text="길음동"
                 android:textStyle="bold"
                 android:textColor="@color/black"
-                android:textSize="21dp"
+                android:textSize="21sp"
                 app:layout_constraintTop_toTopOf="@id/store_back_iv"
                 app:layout_constraintBottom_toBottomOf="@id/store_back_iv"
                 app:layout_constraintStart_toEndOf="@id/store_back_iv"
                 app:layout_constraintEnd_toStartOf="@id/store_search_iv"/>
 
-            <ImageView
+            <ImageButton
                 android:id="@+id/store_search_iv"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/search"
+                android:src="@drawable/search_hd"
+                android:background="#00FF0000"
                 android:layout_marginEnd="15dp"
                 android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="parent"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
+
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -58,13 +63,30 @@
         app:layout_constraintTop_toBottomOf="@id/asdf"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/store_store_rv"
+        android:id="@+id/store_rv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        tools:ignore="MissingConstraints"
-        app:layout_constraintTop_toBottomOf="@id/asdf">
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@id/asdf"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
 
     </androidx.recyclerview.widget.RecyclerView>
 
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/round_button_choice"
+        android:text="메뉴고르기"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

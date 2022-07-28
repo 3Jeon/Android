@@ -1,6 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:id="@+id/choice_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/menu_back_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/back_hd"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/menu_choice_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BBQ 강북스타삼양점"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="21sp"
+            app:layout_constraintTop_toTopOf="@id/menu_back_iv"
+            app:layout_constraintBottom_toBottomOf="@id/menu_back_iv"
+            app:layout_constraintStart_toEndOf="@id/menu_back_iv"
+            app:layout_constraintEnd_toStartOf="@id/menu_search_iv"/>
+
+        <ImageView
+            android:id="@+id/menu_search_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/search_hd"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintTop_toBottomOf="@id/choice_menu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/store_store_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/go_MyMenu"
+        app:layout_constraintTop_toBottomOf="@+id/choice_menu"
+        tools:ignore="MissingConstraints">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/go_MyMenu"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="33dp"
+        android:background="@drawable/round_button_choice"
+        android:text="장바구니"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
