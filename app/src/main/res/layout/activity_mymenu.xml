@@ -55,7 +55,7 @@
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
-
+    
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
@@ -102,5 +102,4 @@
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
-
 
