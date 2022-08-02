@@ -5,54 +5,54 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
-<LinearLayout
-    android:id="@+id/choice_menu"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintStart_toStartOf="parent">
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
+        android:id="@+id/choice_menu"
         android:layout_width="match_parent"
-        android:layout_height="50dp">
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
-            android:id="@+id/menu_back_iv"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/back_hd"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="15dp"
-            android:scaleType="fitCenter"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
 
-        <TextView
-            android:id="@+id/menu_choice_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="BBQ 강북스타삼양점"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:textSize="21sp"
-            app:layout_constraintTop_toTopOf="@id/menu_back_iv"
-            app:layout_constraintBottom_toBottomOf="@id/menu_back_iv"
-            app:layout_constraintStart_toEndOf="@id/menu_back_iv"
-            app:layout_constraintEnd_toStartOf="@id/menu_search_iv"/>
+            <ImageView
+                android:id="@+id/menu_back_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/back_hd"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
 
-        <ImageView
-            android:id="@+id/menu_search_iv"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
-            android:src="@drawable/search_hd"
-            android:layout_marginEnd="15dp"
-            android:layout_marginTop="15dp"
-            android:scaleType="fitCenter"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            <TextView
+                android:id="@+id/menu_choice_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BBQ 강북스타삼양점"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="21sp"
+                app:layout_constraintTop_toTopOf="@id/menu_back_iv"
+                app:layout_constraintBottom_toBottomOf="@id/menu_back_iv"
+                app:layout_constraintStart_toEndOf="@id/menu_back_iv"
+                app:layout_constraintEnd_toStartOf="@id/menu_search_iv"/>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</LinearLayout>
+            <ImageView
+                android:id="@+id/menu_search_iv"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/search_hd"
+                android:layout_marginEnd="15dp"
+                android:layout_marginTop="15dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 
     <View
         android:id="@+id/view3"

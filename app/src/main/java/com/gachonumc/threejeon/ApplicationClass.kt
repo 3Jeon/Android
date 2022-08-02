@@ -1,4 +1,4 @@
-package com.gachonumc.threejeon
+/*package com.gachonumc.threejeon
 
 import android.app.Application
 import android.content.SharedPreferences
@@ -34,3 +34,6 @@ class ApplicationClass: Application() {
          */
     }
 }
+
+
+ */
