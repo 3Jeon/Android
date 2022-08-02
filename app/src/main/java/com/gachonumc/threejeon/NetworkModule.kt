@@ -1,3 +1,4 @@
+/*
 package com.gachonumc.threejeon
 
 import retrofit2.Retrofit
@@ -24,3 +25,5 @@ class NetworkModule {
         }
     }
 }
+
+ */
