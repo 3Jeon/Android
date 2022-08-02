@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class ApplicationClass: Application() {
     companion object {
-        const val BASE_URL = "https://www.naver.com/" //도메인 주소 넣기
+        const val BASE_URL = "https://threejeon.shop" //도메인 주소 넣기
 
         lateinit var retrofit: Retrofit
         lateinit var mSharedPreferences: SharedPreferences
