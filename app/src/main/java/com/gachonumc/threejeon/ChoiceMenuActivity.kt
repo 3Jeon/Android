@@ -20,6 +20,4 @@ class ChoiceMenuActivity : AppCompatActivity() {
             startActivity(mIntent)
         }
     }
-
-
 }
