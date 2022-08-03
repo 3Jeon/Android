@@ -11,5 +11,5 @@ interface RetrofitService {
         @Field("store") store: String
     ): Call<ResponseDTO>
     */
- 
+
 }
