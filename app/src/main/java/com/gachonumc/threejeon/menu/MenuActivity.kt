@@ -5,6 +5,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.gachonumc.threejeon.SearchActivity
 import com.gachonumc.threejeon.databinding.ActivityMenuBinding
 import com.gachonumc.threejeon.mymenu.MyMenuActivity
 import com.gachonumc.threejeon.store.StoreActivity
@@ -35,6 +36,10 @@ class MenuActivity: AppCompatActivity() {
 
         binding.goMyMenu.setOnClickListener {
             startActivity(Intent(this, MyMenuActivity::class.java))
+        }
+
+        binding.menuSearchIv.setOnClickListener {
+            startActivity(Intent(this, SearchActivity::class.java))
         }
     }
 }
