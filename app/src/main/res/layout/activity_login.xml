@@ -80,7 +80,6 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-
         android:id="@+id/login_search_pw"
         android:layout_width="80dp"
         android:layout_height="20dp"
