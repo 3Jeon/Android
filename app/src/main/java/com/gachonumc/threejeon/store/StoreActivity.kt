@@ -59,7 +59,7 @@ class StoreActivity: AppCompatActivity(), BaeminStoreListView {
 
     private fun baeminInformation(category: String, lat: Double, lng: Double){
         val baeminStoreService = BaeminService()
-        baeminStoreService.setBaeminService(this)
-        baeminStoreService.getBaeminService(category, lat, lng)
+        baeminStoreService.setBaeminStoreService(this)
+        baeminStoreService.getBaeminStoreService(category, lat, lng)
     }
 }

@@ -15,7 +15,7 @@ interface BaeminRetrofitInterfaces {
     @GET("/baemin/{restaurant-id}/menu")
     fun getBaeminStoreMenuList(
         @Path("restaurant-id") restaurant_id : Int
-    )
+    ): Call<BaeminStoreMenu>
 
 
 }
