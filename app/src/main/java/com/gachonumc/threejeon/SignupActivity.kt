@@ -16,5 +16,9 @@ class SignupActivity : AppCompatActivity() {
         binding.successAccount.setOnClickListener {
             startActivity(Intent(this, SuccessAccountActivity::class.java))
         }
+
+        binding.signupBack.setOnClickListener{
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
     }
 }

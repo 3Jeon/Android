@@ -28,11 +28,15 @@
         <activity android:name=".FindIdActivity"/>
         <activity android:name=".FindPwActivity"/>
         <activity android:name=".FindStoreActivity"/>
-        <activity android:name=".ChoiceMenuActivity"/>
         <activity android:name=".MyMenuActivity"/>
         <activity android:name=".ResultActivity"/>
         <activity android:name=".FailActivity"/>
         <activity android:name=".SuccessAccountActivity"/>
+        <activity android:name=".store.StoreActivity"/>
+        <activity android:name=".menu.MenuActivity"/>
+        <activity android:name=".mymenu.MyMenuActivity"/>
+        <activity android:name=".MyInfoActivity"/>
+        <activity android:name=".SearchActivity"/>
 
     </application>
 
