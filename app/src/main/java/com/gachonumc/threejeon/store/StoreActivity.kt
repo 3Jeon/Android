@@ -1,13 +1,19 @@
 package com.gachonumc.threejeon.store
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+<<<<<<< HEAD
 import com.gachonumc.threejeon.Baemin.BaeminService
 import com.gachonumc.threejeon.Baemin.BaeminStoreList
 import com.gachonumc.threejeon.Baemin.BaeminStoreListView
+=======
+import com.gachonumc.threejeon.*
+>>>>>>> 5a85da211c8fd4aad687f49404dbaa08f028575e
 import com.gachonumc.threejeon.databinding.ActivityStoreBinding
+import com.gachonumc.threejeon.menu.MenuActivity
 
 class StoreActivity: AppCompatActivity(), BaeminStoreListView {
 
@@ -31,6 +37,18 @@ class StoreActivity: AppCompatActivity(), BaeminStoreListView {
 
         //recyclerview 에 layoutManager 설정
         binding.storeRv.layoutManager = LinearLayoutManager(this)
+
+        binding.storeBackIv.setOnClickListener{
+            startActivity(Intent(this, HomeActivity::class.java))
+        }
+
+        binding.storeSearchIv.setOnClickListener{
+            startActivity(Intent(this, SearchActivity::class.java))
+        }
+
+        binding.chooseMenu.setOnClickListener {
+            startActivity(Intent(this, MenuActivity::class.java))
+        }
     }
 
     override fun baeminStoreListSuccess(result: Array<BaeminStoreList>) {

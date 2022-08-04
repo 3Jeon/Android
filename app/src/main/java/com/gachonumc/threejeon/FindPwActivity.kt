@@ -15,9 +15,14 @@ class FindPwActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
 
+        //로그인하러가기 버튼
         binding.goLogin.setOnClickListener {
-            val mIntent = Intent(this, LoginActivity::class.java)
-            startActivity(mIntent)
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
+
+        //뒤로가기 버튼
+        binding.findpwBack.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 }
