@@ -4,7 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.gachonumc.threejeon.*
+import com.gachonumc.threejeon.Baemin.*
 import com.gachonumc.threejeon.databinding.ActivityStoreBinding
 
 class MenuActivity: AppCompatActivity(), BaeminStoreMenuView {

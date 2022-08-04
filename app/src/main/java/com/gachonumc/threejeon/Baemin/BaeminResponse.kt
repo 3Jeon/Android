@@ -1,4 +1,4 @@
-package com.gachonumc.threejeon
+package com.gachonumc.threejeon.Baemin
 
 import com.google.gson.annotations.SerializedName
 

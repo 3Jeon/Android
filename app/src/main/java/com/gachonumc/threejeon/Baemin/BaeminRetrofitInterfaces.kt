@@ -1,4 +1,4 @@
-package com.gachonumc.threejeon
+package com.gachonumc.threejeon.Baemin
 
 import retrofit2.Call
 import retrofit2.http.*

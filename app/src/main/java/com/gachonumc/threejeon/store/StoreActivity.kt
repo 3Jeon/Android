@@ -4,9 +4,9 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.gachonumc.threejeon.BaeminService
-import com.gachonumc.threejeon.BaeminStoreList
-import com.gachonumc.threejeon.BaeminStoreListView
+import com.gachonumc.threejeon.Baemin.BaeminService
+import com.gachonumc.threejeon.Baemin.BaeminStoreList
+import com.gachonumc.threejeon.Baemin.BaeminStoreListView
 import com.gachonumc.threejeon.databinding.ActivityStoreBinding
 
 class StoreActivity: AppCompatActivity(), BaeminStoreListView {
