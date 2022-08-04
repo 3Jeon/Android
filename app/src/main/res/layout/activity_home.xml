@@ -231,7 +231,7 @@
 
 <!--대충 위치만 잡아두겟서 검은색 버튼을 분명히 만들었을테니까-->
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/btn_store"
         android:layout_width="300dp"
         android:layout_height="48dp"
         android:layout_marginBottom="33dp"
