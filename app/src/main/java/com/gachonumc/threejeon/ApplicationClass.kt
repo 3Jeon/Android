@@ -1,5 +1,3 @@
-
-/*
 package com.gachonumc.threejeon
 
 
@@ -36,4 +34,6 @@ class ApplicationClass: Application() {
 
          */
     }
-} */
+
+}
+
