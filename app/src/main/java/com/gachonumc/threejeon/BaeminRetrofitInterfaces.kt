@@ -17,5 +17,11 @@ interface BaeminRetrofitInterfaces {
         @Path("restaurant-id") restaurant_id : Int
     ): Call<BaeminStoreMenu>
 
-
+    @GET("/beamin/search-restaurants")
+    fun getBaeminSearchList(
+        @Query("items") items : Int,
+        @Query("lat") lat : Double,
+        @Query("lng") lng : Double,
+        @Query("search") search : String
+    ): Call<BaeminSearch>
 }
