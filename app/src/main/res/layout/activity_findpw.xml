@@ -10,14 +10,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="100dp" />
+        app:layout_constraintGuide_begin="130dp" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="비밀번호 찾기"
-        android:textSize="18dp"
+        android:textSize="24sp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:letterSpacing="0"
@@ -31,13 +31,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="45dp" />
+        app:layout_constraintGuide_begin="80dp" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="75dp"
+        android:layout_marginTop="60dp"
         android:text="가입할 때 등록한 이메일과 아이디를 입력해주세요!"
         android:textColor="@color/black"
         android:textSize="18dp"
@@ -50,7 +50,7 @@
         android:id="@+id/enter_email"
         android:layout_width="314dp"
         android:layout_height="38dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="26dp"
         android:background="#EEEEEE"
         android:ems="10"
         android:hint="  이메일"
@@ -64,7 +64,7 @@
         android:id="@+id/enter_id"
         android:layout_width="314dp"
         android:layout_height="38dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="27dp"
         android:background="#EEEEEE"
         android:ems="10"
         android:hint="  아이디"
@@ -88,7 +88,7 @@
         android:textColor="#FF0000"
         android:textSize="12sp"
         tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="318dp" />
+        tools:layout_editor_absoluteY="383dp" />
 
     <TextView
         android:id="@+id/textView5"
@@ -98,7 +98,7 @@
         android:textColor="#0000FF"
         android:textSize="12sp"
         tools:layout_editor_absoluteX="49dp"
-        tools:layout_editor_absoluteY="345dp" />
+        tools:layout_editor_absoluteY="413dp" />
 
     <Button
         android:id="@+id/go_Login"
