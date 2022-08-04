@@ -1,8 +1,7 @@
-package com.gachonumc.threejeon
+package com.gachonumc.threejeon.Baemin
 
-import android.net.Network
 import android.util.Log
-import okhttp3.internal.userAgent
+import com.gachonumc.threejeon.NetworkModule
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -40,7 +39,7 @@ class BaeminService {
             }
 
             override fun onFailure(call: Call<BaeminStore>, t: Throwable) {
-                Log.d("Server off", "B스토어 서버가 꺼져버렸당")
+                Log.d("Server off", "B스토어/서버가 꺼져버렸당")
             }
 
         })
