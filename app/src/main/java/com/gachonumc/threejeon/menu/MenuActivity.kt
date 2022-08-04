@@ -1,5 +1,6 @@
 package com.gachonumc.threejeon.menu
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
@@ -7,12 +8,13 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.gachonumc.threejeon.*
 import com.gachonumc.threejeon.databinding.ActivityStoreBinding
 
+
 class MenuActivity: AppCompatActivity(), BaeminStoreMenuView {
 
     private var baeminStoreMenuArray = ArrayList<BaeminMenuList>()
 
     private val binding by lazy {
-        ActivityStoreBinding.inflate(layoutInflater)
+        ActivityMenuBinding.inflate(layoutInflater)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -21,13 +23,25 @@ class MenuActivity: AppCompatActivity(), BaeminStoreMenuView {
 
         //RecyclerView 에 구분선 넣기
         val divider = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
-        binding.storeRv.addItemDecoration(divider)
+        binding.menuRv.addItemDecoration(divider)
 
         //recyclerview 에 adapter 설정
-        binding.storeRv.adapter = MenuAdapter()
+        binding.menuRv.adapter = MenuAdapter()
 
         //recyclerview 에 layoutManager 설정
-        binding.storeRv.layoutManager = LinearLayoutManager(this)
+        binding.menuRv.layoutManager = LinearLayoutManager(this)
+
+        binding.menuBackIv.setOnClickListener {
+            startActivity(Intent(this, StoreActivity::class.java))
+        }
+
+        binding.goMyMenu.setOnClickListener {
+            startActivity(Intent(this, MyMenuActivity::class.java))
+        }
+
+        binding.menuSearchIv.setOnClickListener {
+            startActivity(Intent(this, SearchActivity::class.java))
+        }
     }
 
     override fun baeminStoreMenuSuccess(result : BaeminStoreMenuList) {

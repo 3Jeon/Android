@@ -14,7 +14,7 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp">
+            android:layout_height="55dp">
 
             <ImageView
                 android:id="@+id/menu_back_iv"
@@ -62,7 +62,7 @@
         app:layout_constraintTop_toBottomOf="@id/choice_menu" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/store_store_rv"
+        android:id="@+id/menu_rv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"

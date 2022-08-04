@@ -17,7 +17,7 @@
             android:layout_height="50dp">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/mymenu_back"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/back_hd"
@@ -36,13 +36,13 @@
                 android:textColor="@color/black"
                 android:textSize="21sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="@+id/imageButton"
-                app:layout_constraintEnd_toStartOf="@+id/store_search_iv"
-                app:layout_constraintStart_toEndOf="@+id/imageButton"
-                app:layout_constraintTop_toTopOf="@+id/imageButton" />
+                app:layout_constraintBottom_toBottomOf="@+id/mymenu_back"
+                app:layout_constraintEnd_toStartOf="@+id/mymenu_search_iv"
+                app:layout_constraintStart_toEndOf="@+id/mymenu_back"
+                app:layout_constraintTop_toTopOf="@+id/mymenu_back" />
 
             <ImageButton
-                android:id="@+id/store_search_iv"
+                android:id="@+id/mymenu_search_iv"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
                 android:src="@drawable/search_hd"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toBottomOf="@id/mymenu" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/store_store_rv"
+        android:id="@+id/mymenu_rv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_marginBottom="8dp"
