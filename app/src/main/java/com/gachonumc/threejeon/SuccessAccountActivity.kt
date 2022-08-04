@@ -1,5 +1,6 @@
 package com.gachonumc.threejeon
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.gachonumc.threejeon.databinding.ActivitySuccessaccountBinding
@@ -15,7 +16,7 @@ class SuccessAccountActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnConfirm.setOnClickListener {
-            finish()
+            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 }
