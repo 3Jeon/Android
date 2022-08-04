@@ -17,6 +17,14 @@ class HomeActivity : AppCompatActivity() {
         binding.btnStore.setOnClickListener {
             startActivity(Intent(this, StoreActivity::class.java))
         }
+
+        binding.homeMyinformationTv.setOnClickListener {
+            startActivity(Intent(this, MyInfoActivity::class.java))
+        }
+
+        binding.homeLogoutTv.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
     }
 }
 

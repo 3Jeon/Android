@@ -13,7 +13,17 @@ class FindIdActivity: AppCompatActivity() {
         binding = ActivityFindidBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //회원가입
+        //ID 찾기 버튼
+        binding.findId.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
+
+        //뒤로가기 버튼
+        binding.findidBack.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
+
+        //로그인화면으로 가기 버튼
         binding.gotoLogin.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
