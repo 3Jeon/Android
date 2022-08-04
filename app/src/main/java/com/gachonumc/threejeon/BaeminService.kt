@@ -2,6 +2,7 @@ package com.gachonumc.threejeon
 
 import android.net.Network
 import android.util.Log
+import okhttp3.internal.userAgent
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -10,6 +11,7 @@ import retrofit2.Response
 class BaeminService {
     private lateinit var baeminStoreListView: BaeminStoreListView
     private lateinit var baeminStoreMenuView: BaeminStoreMenuView
+    private lateinit var baeminSearchView: BaeminSearchView
 
     fun setBaeminStoreService(baeminStoreListView: BaeminStoreListView){
         this.baeminStoreListView = baeminStoreListView
@@ -17,6 +19,10 @@ class BaeminService {
 
     fun setBaeminStoreMenuService(baeminStoreMenuView: BaeminStoreMenuView){
         this.baeminStoreMenuView = baeminStoreMenuView
+    }
+
+    fun setBaeminSearchService(baeminSearchView: BaeminSearchView){
+        this.baeminSearchView = baeminSearchView
     }
 
     //retrofit 만듬
@@ -47,13 +53,13 @@ class BaeminService {
             override fun onResponse(call: Call<BaeminStoreMenu>, response: Response<BaeminStoreMenu>) {
                 if (response.isSuccessful && response.code() == 200){
                     val baeminStoreMenu: BaeminStoreMenu = response.body()!!
-                    /*
+
                     when (baeminStoreMenu.code){
-                        1000 -> baeminStoreListView.baeminStoreListSuccess(baeminStoreMenu.result)
-                        else -> baeminStoreListView.baeminStoreListFailure(baeminStoreMenu.code, baeminStoreMenu.message)
+                        1000 -> baeminStoreMenuView.baeminStoreMenuSuccess(baeminStoreMenu.result)
+                        else -> baeminStoreMenuView.baeminStoreMenuFailure(baeminStoreMenu.code, baeminStoreMenu.message)
                     }
 
-                     */
+
                 }
             }
 
@@ -63,6 +69,29 @@ class BaeminService {
 
         })
 
+    }
+
+    fun getBaeminSearchService(items : Int, lat : Double, lng : Double, search : String){
+        val baeminSearchService = NetworkModule.getInstance()?.create(BaeminRetrofitInterfaces::class.java)
+        baeminSearchService?.getBaeminSearchList(items, lat, lng, search)?.enqueue(object : Callback<BaeminSearch>{
+            override fun onResponse(call: Call<BaeminSearch>, response: Response<BaeminSearch>) {
+                if (response.isSuccessful && response.code() == 200){
+                    val baeminSearch: BaeminSearch = response.body()!!
+
+                    when (baeminSearch.code){
+                        1000 -> baeminSearchView.baeminSearchSuccess(baeminSearch.result)
+                        else -> baeminSearchView.baeminSearchFailure(baeminSearch.code, baeminSearch.message)
+                    }
+
+
+                }
+            }
+
+            override fun onFailure(call: Call<BaeminSearch>, t: Throwable) {
+                Log.d("Server off", "B검색/메뉴 서버가 꺼져버렸당")
+            }
+
+        })
     }
 
 

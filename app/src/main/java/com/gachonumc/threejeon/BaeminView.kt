@@ -6,6 +6,11 @@ package com.gachonumc.threejeon
     }
 
 interface BaeminStoreMenuView{
-    fun baeminStoreMenuSuccess(result: Array<BaeminStoreMenuList>)
+    fun baeminStoreMenuSuccess(result: BaeminStoreMenuList)
     fun baeminStoreMenuFailure(code : Int, message: String)
+}
+
+interface BaeminSearchView{
+    fun baeminSearchSuccess(result: BaeminSearchStoreList)
+    fun baeminSearchFailure(code : Int, message: String)
 }
