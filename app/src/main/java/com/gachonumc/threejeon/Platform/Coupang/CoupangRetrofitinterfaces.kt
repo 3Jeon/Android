@@ -1,4 +1,4 @@
-package com.gachonumc.threejeon.Coupang
+package com.gachonumc.threejeon.Platform.Coupang
 
 import retrofit2.Call
 import retrofit2.http.*

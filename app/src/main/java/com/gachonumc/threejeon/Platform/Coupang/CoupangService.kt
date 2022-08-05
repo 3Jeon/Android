@@ -1,4 +1,4 @@
-package com.gachonumc.threejeon.Coupang
+package com.gachonumc.threejeon.Platform.Coupang
 
 import android.util.Log
 import com.gachonumc.threejeon.NetworkModule

@@ -1,4 +1,4 @@
-package com.gachonumc.threejeon.Coupang
+package com.gachonumc.threejeon.Platform.Coupang
 
 interface CoupangStoreListView{
     fun coupangStoreListSuccess(result: Array<CoupangStoreList>)

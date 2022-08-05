@@ -1,4 +1,4 @@
-package com.gachonumc.threejeon.Baemin
+package com.gachonumc.threejeon.Platform.Baemin
 
 import android.util.Log
 import com.gachonumc.threejeon.NetworkModule

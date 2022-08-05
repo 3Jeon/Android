@@ -1,6 +1,5 @@
-package com.gachonumc.threejeon.Coupang
+package com.gachonumc.threejeon.Platform.Coupang
 
-import com.gachonumc.threejeon.Baemin.BaeminStoreList
 import com.google.gson.annotations.SerializedName
 
 class CoupangStoreMenu (
