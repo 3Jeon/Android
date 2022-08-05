@@ -6,9 +6,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 <<<<<<< HEAD
-import com.gachonumc.threejeon.Baemin.BaeminService
-import com.gachonumc.threejeon.Baemin.BaeminStoreList
-import com.gachonumc.threejeon.Baemin.BaeminStoreListView
+import com.gachonumc.threejeon.Platform.Baemin.BaeminService
+import com.gachonumc.threejeon.Platform.Baemin.BaeminStoreList
+import com.gachonumc.threejeon.Platform.Baemin.BaeminStoreListView
 =======
 import com.gachonumc.threejeon.*
 >>>>>>> 5a85da211c8fd4aad687f49404dbaa08f028575e
