@@ -9,7 +9,8 @@ interface BaeminRetrofitInterfaces {
     fun getBaeminStoreList(
         @Query("category") category: String,
         @Query("lat") lat: Double,
-        @Query("lng") lng: Double
+        @Query("lng") lng: Double,
+        @Query("sort") sort : String
     ): Call<BaeminStore>
 
     @GET("/baemin/{restaurant-id}/menu")
@@ -22,6 +23,7 @@ interface BaeminRetrofitInterfaces {
         @Query("items") items : Int,
         @Query("lat") lat : Double,
         @Query("lng") lng : Double,
-        @Query("search") search : String
+        @Query("search") search : String,
+        @Query("sort") sort : String
     ): Call<BaeminSearch>
 }
