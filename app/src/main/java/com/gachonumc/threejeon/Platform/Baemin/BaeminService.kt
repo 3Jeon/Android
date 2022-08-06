@@ -25,9 +25,9 @@ class BaeminService {
     }
 
     //retrofit 만듬
-    fun getBaeminStoreService(category : String, lat : Double, lng : Double){
+    fun getBaeminStoreService(category : String, lat : Double, lng : Double, sort : String){
         val baeminStoreListService = NetworkModule.getInstance()?.create(BaeminRetrofitInterfaces::class.java)
-        baeminStoreListService?.getBaeminStoreList(category, lat, lng)?.enqueue(object: Callback<BaeminStore> {
+        baeminStoreListService?.getBaeminStoreList(category, lat, lng, sort)?.enqueue(object: Callback<BaeminStore> {
             override fun onResponse(call: Call<BaeminStore>, response: Response<BaeminStore>) {
                 if (response.isSuccessful && response.code() == 200){
                     val baeminStore: BaeminStore = response.body()!!
@@ -63,16 +63,16 @@ class BaeminService {
             }
 
             override fun onFailure(call: Call<BaeminStoreMenu>, t: Throwable) {
-                Log.d("Server off", "B스토어/메뉴 서버가 꺼져버렸당")
+                Log.d("Server off", "B메뉴 서버가 꺼져버렸당")
             }
 
         })
 
     }
 
-    fun getBaeminSearchService(items : Int, lat : Double, lng : Double, search : String){
+    fun getBaeminSearchService(items : Int, lat : Double, lng : Double, search : String, sort : String){
         val baeminSearchService = NetworkModule.getInstance()?.create(BaeminRetrofitInterfaces::class.java)
-        baeminSearchService?.getBaeminSearchList(items, lat, lng, search)?.enqueue(object : Callback<BaeminSearch>{
+        baeminSearchService?.getBaeminSearchList(items, lat, lng, search, sort)?.enqueue(object : Callback<BaeminSearch>{
             override fun onResponse(call: Call<BaeminSearch>, response: Response<BaeminSearch>) {
                 if (response.isSuccessful && response.code() == 200){
                     val baeminSearch: BaeminSearch = response.body()!!
@@ -87,7 +87,7 @@ class BaeminService {
             }
 
             override fun onFailure(call: Call<BaeminSearch>, t: Throwable) {
-                Log.d("Server off", "B검색/메뉴 서버가 꺼져버렸당")
+                Log.d("Server off", "B검색 서버가 꺼져버렸당")
             }
 
         })
