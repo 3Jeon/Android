@@ -5,11 +5,14 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.gachonumc.threejeon.Platform.Baemin.BaeminMenuList
 import com.gachonumc.threejeon.SearchActivity
 import com.gachonumc.threejeon.databinding.ActivityMymenuBinding
 import com.gachonumc.threejeon.databinding.ActivityStoreBinding
 import com.gachonumc.threejeon.menu.MenuActivity
 
+
+//여긴 장바구니
 class MyMenuActivity: AppCompatActivity() {
 
     private val binding by lazy {
@@ -38,4 +41,5 @@ class MyMenuActivity: AppCompatActivity() {
             startActivity(Intent(this, SearchActivity::class.java))
         }
     }
+
 }

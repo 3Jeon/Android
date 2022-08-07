@@ -48,6 +48,11 @@ class MenuActivity: AppCompatActivity(), BaeminStoreMenuView {
         }
     }
 
+    override fun onResume() {
+        super.onResume()
+        //baeminStoreMenuIn(category, lat, lng, sort) //
+    }
+
     override fun baeminStoreMenuSuccess(result : BaeminStoreMenuList) {
         val menuResult = result.bmenus.size
 

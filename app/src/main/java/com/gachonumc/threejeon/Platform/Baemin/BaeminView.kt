@@ -11,6 +11,6 @@ interface BaeminStoreMenuView{
 }
 
 interface BaeminSearchView{
-    fun baeminSearchSuccess(result: BaeminSearchStoreList)
+    fun baeminSearchSuccess(result: Array<BaeminSearchStoreList>)
     fun baeminSearchFailure(code : Int, message: String)
 }

@@ -5,13 +5,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-<<<<<<< HEAD
 import com.gachonumc.threejeon.Platform.Baemin.BaeminService
 import com.gachonumc.threejeon.Platform.Baemin.BaeminStoreList
 import com.gachonumc.threejeon.Platform.Baemin.BaeminStoreListView
-=======
 import com.gachonumc.threejeon.*
->>>>>>> 5a85da211c8fd4aad687f49404dbaa08f028575e
 import com.gachonumc.threejeon.databinding.ActivityStoreBinding
 import com.gachonumc.threejeon.menu.MenuActivity
 
@@ -27,6 +24,7 @@ class StoreActivity: AppCompatActivity(), BaeminStoreListView {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(binding.root)
+
 
         //RecyclerView 에 구분선 넣기
         val divider = DividerItemDecoration(this, DividerItemDecoration.VERTICAL)
@@ -50,6 +48,12 @@ class StoreActivity: AppCompatActivity(), BaeminStoreListView {
             startActivity(Intent(this, MenuActivity::class.java))
         }
     }
+
+    override fun onResume() {
+        super.onResume()
+        //baeminInformation(category, lat, lng, sort) //
+    }
+
 
     override fun baeminStoreListSuccess(result: Array<BaeminStoreList>) {
         val resultSize = result.size
@@ -75,9 +79,9 @@ class StoreActivity: AppCompatActivity(), BaeminStoreListView {
         TODO("Not yet implemented")
     }
 
-    private fun baeminInformation(category: String, lat: Double, lng: Double){
+    private fun baeminInformation(category: String, lat: Double, lng: Double, sort : String){
         val baeminStoreService = BaeminService()
         baeminStoreService.setBaeminStoreService(this)
-        baeminStoreService.getBaeminStoreService(category, lat, lng)
+        baeminStoreService.getBaeminStoreService(category, lat, lng, sort)
     }
 }
