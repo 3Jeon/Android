@@ -18,7 +18,7 @@ data class CoupangSearchList(
     @SerializedName("latitude") val latitude: Double,
     @SerializedName("longitude") val longitude: Double,
     @SerializedName("minimumOrderPriceForDelivery") val minimumOrderPriceForDelivery: Int,
-    @SerializedName("_available_delivery") val name: String,
+    @SerializedName("name") val name: String,
     @SerializedName("openStatus") val openStatus: String,
     @SerializedName("pickupAvailable") val pickupAvailable: Boolean,
     @SerializedName("pickupEstimationFoodTimeText") val pickupEstimationFoodTimeText: String,
@@ -26,8 +26,6 @@ data class CoupangSearchList(
     @SerializedName("reviewRating") val reviewRating: Double,
     @SerializedName("supportedPickup") val supportedPickup: Boolean,
     @SerializedName("telNo") val telNo: String
-
-
 )
 
 

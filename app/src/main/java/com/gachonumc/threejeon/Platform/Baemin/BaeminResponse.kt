@@ -69,7 +69,7 @@ data class BaeminSearch(
     @SerializedName("code") val code: Int,
     @SerializedName("isSuccess") val isSuccess: Boolean,
     @SerializedName("message") val message: String,
-    @SerializedName("result") val result: BaeminSearchStoreList
+    @SerializedName("result") val result: Array<BaeminSearchStoreList>
 )
 
 data class BaeminSearchStoreList(
