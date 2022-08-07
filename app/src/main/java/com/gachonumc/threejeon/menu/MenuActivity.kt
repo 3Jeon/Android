@@ -6,6 +6,10 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gachonumc.threejeon.Platform.Baemin.*
+import com.gachonumc.threejeon.SearchActivity
+import com.gachonumc.threejeon.databinding.ActivityMenuBinding
+import com.gachonumc.threejeon.mymenu.MyMenuActivity
+import com.gachonumc.threejeon.store.StoreActivity
 
 
 class MenuActivity: AppCompatActivity(), BaeminStoreMenuView {
@@ -40,6 +44,7 @@ class MenuActivity: AppCompatActivity(), BaeminStoreMenuView {
 
         binding.menuSearchIv.setOnClickListener {
             startActivity(Intent(this, SearchActivity::class.java))
+            //intent로 메뉴검색이라는 필터링 하나 넣어줘야할듯
         }
     }
 
