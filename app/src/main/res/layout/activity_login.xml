@@ -5,131 +5,71 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/Textview"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="130dp"
-        android:text="3전"
-        android:textColor="@color/black"
-        android:textSize="24sp"
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="240dp"
+        android:layout_height="207dp"
+        android:layout_marginTop="142dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
+        app:srcCompat="@drawable/main_nyam" />
 
-    <EditText
-        android:id="@+id/login_id"
-        android:layout_width="294dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="130dp"
-        android:background="#EEEEEE"
-        android:ems="10"
-        android:hint="    아이디"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Textview" />
-
-    <EditText
-        android:id="@+id/login_pw"
-        android:layout_width="294dp"
-        android:layout_height="38dp"
-        android:layout_marginTop="27dp"
-        android:background="#EEEEEE"
-        android:ems="10"
-        android:hint="    비밀번호"
-        android:inputType="textPassword"
-        app:layout_constraintEnd_toEndOf="@+id/login_id"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="@+id/login_id"
-        app:layout_constraintTop_toBottomOf="@+id/login_id" />
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="132dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="23dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView12"
+        app:layout_constraintStart_toStartOf="@+id/imageView12"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12"
+        app:srcCompat="@drawable/word_compare" />
 
     <Button
-        android:id="@+id/login_btn"
-        android:layout_width="300dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="63dp"
-        android:background="@drawable/round_button"
+        android:id="@+id/kakao_login_btn"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:background="@drawable/kakao_login_btn"
         android:bottomLeftRadius="12dp"
-        android:text="확인"
-        android:textSize="18sp"
-        app:layout_constraintEnd_toEndOf="@+id/login_id"
-        app:layout_constraintStart_toStartOf="@+id/login_id"
-        app:layout_constraintTop_toBottomOf="@+id/login_pw"
+        android:text="카카오로 로그인"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/google_login_btn"
+        app:layout_constraintStart_toStartOf="@+id/google_login_btn"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="496dp" />
+
+    <Button
+        android:id="@+id/apple_login_btn"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/apple_login_btn"
+        android:bottomLeftRadius="12dp"
+        android:text="Apple로 로그인"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="@+id/google_login_btn"
+        app:layout_constraintStart_toStartOf="@+id/google_login_btn"
+        app:layout_constraintTop_toBottomOf="@+id/kakao_login_btn"
         tools:ignore="MissingConstraints" />
 
     <Button
-
-        android:id="@+id/login_search_id"
-        android:layout_width="67dp"
-        android:layout_height="20dp"
-        android:layout_marginStart="77dp"
-        android:layout_marginTop="21dp"
-        android:layout_marginBottom="180dp"
-        android:background="#00FF0000"
-        android:letterSpacing="0"
-        android:text="아이디 찾기"
-        android:textColor="#C0C0C0"
-        android:textSize="12sp"
+        android:id="@+id/google_login_btn"
+        android:layout_width="343dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/google_login_btn"
+        android:bottomLeftRadius="12dp"
+        android:text="Google로 로그인"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/login_btn"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/login_search_pw"
-        android:layout_width="80dp"
-        android:layout_height="20dp"
-        android:background="#00FF0000"
-        android:letterSpacing="0"
-        android:text="비밀번호 찾기"
-        android:textColor="#C0C0C0"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/login_search_id"
-        app:layout_constraintEnd_toStartOf="@+id/make_account"
-        app:layout_constraintStart_toEndOf="@+id/login_search_id"
-        app:layout_constraintTop_toTopOf="@+id/login_search_id"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/make_account"
-        android:layout_width="50dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="77dp"
-        android:background="#00FF0000"
-        android:letterSpacing="0"
-        android:text="회원가입"
-        android:textColor="#C0C0C0"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="@+id/login_search_id"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/login_search_id"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apple_login_btn"
         tools:ignore="MissingConstraints" />
 
-    <TextView
-        android:id="@+id/slash1"
-        android:layout_width="5dp"
-        android:layout_height="20dp"
-        android:text="/"
-        android:textColor="#C0C0C0"
-        app:layout_constraintBottom_toBottomOf="@+id/login_search_id"
-        app:layout_constraintEnd_toStartOf="@+id/login_search_pw"
-        app:layout_constraintStart_toEndOf="@+id/login_search_id"
-        app:layout_constraintTop_toTopOf="@+id/login_search_id" />
 
-    <TextView
-        android:id="@+id/slash2"
-        android:layout_width="5dp"
-        android:layout_height="20dp"
-        android:text="/"
-        android:textColor="#C0C0C0"
-        app:layout_constraintBottom_toBottomOf="@+id/login_search_id"
-        app:layout_constraintEnd_toStartOf="@+id/make_account"
-        app:layout_constraintStart_toEndOf="@+id/login_search_pw"
-        app:layout_constraintTop_toTopOf="@+id/login_search_id" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
