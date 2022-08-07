@@ -13,25 +13,21 @@ class LoginActivity : AppCompatActivity() {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        //회원가입
-        binding.makeAccount.setOnClickListener {
+        //Kakao 로그인
+        binding.kakaoLoginBtn.setOnClickListener {
             startActivity(Intent(this, SignupActivity::class.java))
         }
 
-        //id 찾기
-        binding.loginSearchId.setOnClickListener {
-            startActivity(Intent(this, FindIdActivity::class.java))
+        //Apple 로그인
+        binding.appleLoginBtn.setOnClickListener {
+            startActivity(Intent(this, SignupActivity::class.java))
         }
 
-        //pw 찾기
-        binding.loginSearchPw.setOnClickListener {
-            startActivity(Intent(this, FindPwActivity::class.java))
+        //Google 로그인
+        binding.googleLoginBtn.setOnClickListener {
+            startActivity(Intent(this, SignupActivity::class.java))
         }
 
-        //로그인 확인
-        binding.loginBtn.setOnClickListener {
-            startActivity(Intent(this, HomeActivity::class.java))
-        }
 
 
     }
