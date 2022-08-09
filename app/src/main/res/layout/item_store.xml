@@ -40,35 +40,29 @@
                 app:layout_constraintTop_toTopOf="@+id/store_item_img" />
 
             <TextView
-                android:id="@+id/store_now"
+                android:id="@+id/store_item_distance_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:text="영업중"
-                android:textColor="#FF0000"
+                android:text="9km"
+                android:textColor="@color/black"
                 android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@+id/store_item_name"
                 app:layout_constraintTop_toBottomOf="@+id/store_item_name" />
 
             <TextView
-                android:id="@+id/expect_time"
+                android:id="@+id/item_store_address_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginEnd="50dp"
-                android:layout_marginBottom="8dp"
-                android:text="44~59분"
-                android:textColor="@color/black"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
-
-            <ImageView
-                android:id="@+id/image_star"
-                android:layout_width="20dp"
-                android:layout_height="20dp"
                 android:layout_marginTop="2dp"
-                app:layout_constraintStart_toStartOf="@+id/store_now"
-                app:layout_constraintTop_toBottomOf="@+id/store_now"
-                app:srcCompat="@drawable/star" />
+                android:text="서울시 성북구 안암동5가 102-60"
+                android:textColor="@color/gray"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/store_item_distance_tv"
+                app:layout_constraintTop_toBottomOf="@+id/store_item_distance_tv" />
+
+
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
