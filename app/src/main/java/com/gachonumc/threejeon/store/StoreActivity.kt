@@ -3,6 +3,7 @@ package com.gachonumc.threejeon.store
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.gachonumc.threejeon.Platform.Baemin.BaeminService
@@ -18,7 +19,7 @@ class StoreActivity: AppCompatActivity(), BaeminStoreListView {
     private lateinit var storeAdapter: StoreAdapter
 
     private val binding by lazy {
-        ActivityStoreBinding.inflate(layoutInflater)
+        FragmentNavigatorExtras().inflate(layoutInflater)
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
