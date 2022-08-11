@@ -116,8 +116,6 @@ class MenuFragment : Fragment(), BaeminStoreMenuView {
     }
 
 
-
-
     override fun onResume() {
         super.onResume()
         //baeminInformation(category, lat, lng, sort) //
