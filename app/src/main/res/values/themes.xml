@@ -3,8 +3,8 @@
     <style name="Theme.Threejeon" parent="Theme.AppCompat.Light">
         <item name="windowNoTitle">true</item>
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#D1FF17</item>
-        <item name="colorPrimaryVariant">#B7E303</item>
+        <item name="colorPrimary">#FF834E</item>
+        <item name="colorPrimaryVariant">#FF834E</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>

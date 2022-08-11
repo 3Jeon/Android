@@ -2,43 +2,35 @@ package com.gachonumc.threejeon
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
+import android.view.View
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
-import com.gachonumc.threejeon.NetworkStatus.getConnectivityStatus
 import com.gachonumc.threejeon.databinding.ActivitySignupBinding
 
 
 class SignupActivity : AppCompatActivity() {
-    lateinit var binding : ActivitySignupBinding
+
+    private val enter_location: EditText? = null
+
+    lateinit var binding: ActivitySignupBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.enterLocation.setOnClickListener{
+        binding.enterLocation
 
-            Log.i("주소설정페이지", "주소입력창 클릭")
-            val status = getConnectivityStatus(applicationContext)
-            if (status == NetworkStatus.TYPE_MOBILE || status == NetworkStatus.TYPE_WIFI) {
-
-                Log.i("주소설정페이지", "주소입력창 클릭")
-                Intent i = new Intent(getApplicationContext(), AddressActivity.class)
-                        overridePendingTransition(0, 0)
-                startActivity(i, AddressActivity)
-
-            } else {
-                Toast.makeText(applicationContext, "인터넷 연결을 확인해주세요.", Toast.LENGTH_SHORT).show()
+        if (enter_location != null) {
+            enter_location.setOnClickListener {
+                fun onClickListener(v: View?) {
+                    val i = Intent(this@SignupActivity, WebviewActivity::class.java)
+                }
             }
         }
 
         binding.successAccount.setOnClickListener {
             startActivity(Intent(this, SuccessAccountActivity::class.java))
-        }
-
-        binding.signupBack.setOnClickListener{
-            startActivity(Intent(this, LoginActivity::class.java))
         }
     }
 }
