@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.gachonumc.threejeon.databinding.ActivityFailBinding
-import com.gachonumc.threejeon.menu.MenuActivity
+import com.gachonumc.threejeon.menu.MenuFragment
 
 class FailActivity : AppCompatActivity() {
 
@@ -17,7 +17,7 @@ class FailActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.returnMenu.setOnClickListener {
-            val mIntent = Intent(this, MenuActivity::class.java)
+            val mIntent = Intent(this, MenuFragment::class.java)
             startActivity(mIntent)
         }
     }

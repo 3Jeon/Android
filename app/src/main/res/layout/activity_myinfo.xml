@@ -14,13 +14,13 @@
 
     <ImageButton
         android:id="@+id/myinfo_back"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="19dp"
         android:background="#00FF0000"
         android:scaleType="fitCenter"
         android:src="@drawable/back_hd"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +32,7 @@
         android:letterSpacing="0"
         android:text="내 정보"
         android:textColor="@color/black"
-        android:textSize="21sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/myinfo_back"
         app:layout_constraintEnd_toEndOf="parent"
