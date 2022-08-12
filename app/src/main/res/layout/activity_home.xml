@@ -139,8 +139,8 @@
         android:gravity="center"
         android:text="분식"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/home_box_1_tv"
-        tools:layout_editor_absoluteX="25dp" />
+        app:layout_constraintStart_toStartOf="@+id/home_box_1_tv"
+        app:layout_constraintTop_toBottomOf="@id/home_box_1_tv" />
 
     <TextView
         android:id="@+id/home_box_5_tv"
@@ -184,8 +184,8 @@
         android:gravity="center"
         android:text="양식"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/home_box_4_tv"
-        tools:layout_editor_absoluteX="25dp" />
+        app:layout_constraintStart_toStartOf="@+id/home_box_1_tv"
+        app:layout_constraintTop_toBottomOf="@id/home_box_4_tv" />
 
     <TextView
         android:id="@+id/home_box_8_tv"
@@ -225,8 +225,8 @@
         android:gravity="center"
         android:text="아시안"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@id/home_box_7_tv"
-        tools:layout_editor_absoluteX="25dp" />
+        app:layout_constraintStart_toStartOf="@+id/home_box_1_tv"
+        app:layout_constraintTop_toBottomOf="@id/home_box_7_tv" />
 
     <TextView
         android:id="@+id/home_box_10_tv2"
@@ -237,8 +237,8 @@
         android:gravity="center"
         android:text="도시락"
         android:textColor="@color/black"
-        app:layout_constraintTop_toBottomOf="@+id/home_box_10_tv"
-        tools:layout_editor_absoluteX="26dp" />
+        app:layout_constraintStart_toStartOf="@+id/home_box_1_tv"
+        app:layout_constraintTop_toBottomOf="@+id/home_box_10_tv" />
 
     <TextView
         android:id="@+id/home_box_10_tv3"
@@ -249,8 +249,8 @@
         android:text="돈까스•회•일식"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/home_box_10_tv2"
-        app:layout_constraintTop_toTopOf="@+id/home_box_10_tv2"
-        tools:layout_editor_absoluteX="152dp" />
+        app:layout_constraintEnd_toEndOf="@+id/home_box_11_tv"
+        app:layout_constraintTop_toTopOf="@+id/home_box_10_tv2" />
 
     <TextView
         android:id="@+id/home_box_11_tv"
