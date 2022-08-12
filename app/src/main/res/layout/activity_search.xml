@@ -14,13 +14,13 @@
 
     <ImageButton
         android:id="@+id/search_back"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="18dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="19dp"
         android:background="#00FF0000"
         android:scaleType="fitCenter"
         android:src="@drawable/back_hd"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
