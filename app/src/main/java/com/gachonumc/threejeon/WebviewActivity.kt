@@ -35,6 +35,6 @@ class WebviewActivity : AppCompatActivity() {
                 browser!!.loadUrl("javascript:sample2_execDaumPostcode2();")
             }
         }
-        browser!!.loadUrl("http://https://threejeon.shop//daum.html")
+        browser!!.loadUrl("https://threejeon.shop//daum.html")
     }
 }

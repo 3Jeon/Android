@@ -24,20 +24,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"/>
-        <activity android:name=".SignupActivity"/>
-        <activity android:name=".SuccessActivity"/>
-        <activity android:name=".HomeActivity"/>
-        <activity android:name=".FindStoreActivity"/>
-        <activity android:name=".MyMenuActivity"/>
-        <activity android:name=".ResultActivity"/>
-        <activity android:name=".FailActivity"/>
-        <activity android:name=".SuccessAccountActivity"/>
-        <activity android:name=".store.StoreActivity"/>
         <activity android:name=".menu.MenuActivity"/>
         <activity android:name=".mymenu.MyMenuActivity"/>
+        <activity android:name=".store.StoreActivity"/>
+
+        <activity android:name=".FailActivity"/>
+        <activity android:name=".FindStoreActivity"/>
+        <activity android:name=".HomeActivity"/>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".MyInfoActivity"/>
+        <activity android:name=".MyMenuActivity"/>
+        <activity android:name=".ResultActivity"/>
         <activity android:name=".SearchActivity"/>
+        <activity android:name=".SignupActivity"/>
+        <activity android:name=".SuccessAccountActivity"/>
+        <activity android:name=".SuccessActivity"/>
+        <activity android:name=".WebviewActivity"/>
 
     </application>
 

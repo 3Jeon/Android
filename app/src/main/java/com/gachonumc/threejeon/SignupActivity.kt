@@ -19,12 +19,13 @@ class SignupActivity : AppCompatActivity() {
         binding = ActivitySignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.enterLocation
+        binding.enterLocation.setOnClickListener {
 
-        if (enter_location != null) {
-            enter_location.setOnClickListener {
-                fun onClickListener(v: View?) {
-                    val i = Intent(this@SignupActivity, WebviewActivity::class.java)
+            if (enter_location != null) {
+                enter_location.setOnClickListener {
+                    fun onClickListener(v: View?) {
+                        val i = Intent(this@SignupActivity, WebviewActivity::class.java)
+                    }
                 }
             }
         }
