@@ -4,9 +4,7 @@ import android.net.Uri
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.gachonumc.threejeon.BaeminStore
-import com.gachonumc.threejeon.BaeminStoreList
-import com.gachonumc.threejeon.BaeminStoreListView
+import com.gachonumc.threejeon.Platform.Baemin.BaeminStoreList
 import com.gachonumc.threejeon.databinding.ItemStoreBinding
 
 class StoreAdapter(private var storeList : ArrayList<BaeminStoreList>) : RecyclerView.Adapter<StoreAdapter.ViewHolder>() {

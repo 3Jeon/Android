@@ -1,10 +1,10 @@
-package com.gachonumc.threejeon
+package com.gachonumc.threejeon.Platform.Baemin
 
 import com.google.gson.annotations.SerializedName
 
 data class BaeminStore(
-    @SerializedName("isSuccess") val isSuccess: Boolean,
     @SerializedName("code") val code: Int,
+    @SerializedName("isSuccess") val isSuccess: Boolean,
     @SerializedName("message") val message: String,
     @SerializedName("result") val result: Array<BaeminStoreList>
 )
@@ -21,16 +21,15 @@ data class BaeminStoreList(
 )
 
 data class BaeminStoreMenu(
-    @SerializedName("isSuccess") val isSuccess: Boolean,
     @SerializedName("code") val code: Int,
+    @SerializedName("isSuccess") val isSuccess: Boolean,
     @SerializedName("message") val message: String,
-    @SerializedName("result") val result: Array<BaeminStoreMenuList>
+    @SerializedName("result") val result: BaeminStoreMenuList
 )
 
 data class BaeminStoreMenuList(
-    @SerializedName("brestaurantDetail") val brestaurantDetail: Array<BaeminStoreInfo>,
+    @SerializedName("brestaurantDetail") val brestaurantDetail: BaeminStoreInfo,
     @SerializedName("bmenus") val bmenus: Array<BaeminMenuList>
-
 )
 
 data class BaeminMenuList(
@@ -40,7 +39,6 @@ data class BaeminMenuList(
     @SerializedName("name") val name: String,
     @SerializedName("price") val price: String,
     @SerializedName("soldOut") val soldOut: Boolean
-
 )
 
 data class BaeminStoreInfo(
@@ -64,6 +62,26 @@ data class BaeminStoreInfo(
     @SerializedName("takeoutDiscountRate") val takeoutDiscountRate: Int,
     @SerializedName("useDelivery") val useDelivery: Boolean,
     @SerializedName("useTakeout") val useTakeout: Boolean,
-    @SerializedName("vel_No") val vel_No: String,
+    @SerializedName("vel_No") val vel_No: String
+)
 
+data class BaeminSearch(
+    @SerializedName("code") val code: Int,
+    @SerializedName("isSuccess") val isSuccess: Boolean,
+    @SerializedName("message") val message: String,
+    @SerializedName("result") val result: Array<BaeminSearchStoreList>
+)
+
+data class BaeminSearchStoreList(
+    @SerializedName("address") val address: String,
+    @SerializedName("averageStarScore") val averageStarScore: Double,
+    @SerializedName("closeDayText") val closeDayText: String,
+    @SerializedName("deliveryTip") val deliveryTip: Array<Int>,
+    @SerializedName("inOperation") val inOperation: Boolean,
+    @SerializedName("logoUrl") val logoUrl: String,
+    @SerializedName("minimumOrderPrice") val minimumOrderPrice: Int,
+    @SerializedName("shopName") val shopName: String,
+    @SerializedName("shopNumber") val shopNumber: Int,
+    @SerializedName("telNumber") val telNumber: String,
+    @SerializedName("virtualTelNumber") val virtualTelNumber: String,
 )

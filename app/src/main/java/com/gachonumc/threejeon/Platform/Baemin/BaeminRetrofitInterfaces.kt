@@ -1,4 +1,4 @@
-package com.gachonumc.threejeon
+package com.gachonumc.threejeon.Platform.Baemin
 
 import retrofit2.Call
 import retrofit2.http.*
@@ -9,7 +9,8 @@ interface BaeminRetrofitInterfaces {
     fun getBaeminStoreList(
         @Query("category") category: String,
         @Query("lat") lat: Double,
-        @Query("lng") lng: Double
+        @Query("lng") lng: Double,
+        @Query("sort") sort : String
     ): Call<BaeminStore>
 
     @GET("/baemin/{restaurant-id}/menu")
@@ -17,5 +18,12 @@ interface BaeminRetrofitInterfaces {
         @Path("restaurant-id") restaurant_id : Int
     ): Call<BaeminStoreMenu>
 
-
+    @GET("/beamin/search-restaurants")
+    fun getBaeminSearchList(
+        @Query("items") items : Int,
+        @Query("lat") lat : Double,
+        @Query("lng") lng : Double,
+        @Query("search") search : String,
+        @Query("sort") sort : String
+    ): Call<BaeminSearch>
 }
