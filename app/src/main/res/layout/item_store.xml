@@ -57,7 +57,7 @@
                 android:layout_marginTop="2dp"
                 android:text="서울시 성북구 안암동5가 102-60"
                 android:textColor="@color/gray"
-                android:textSize="12sp"
+                android:textSize="14sp"
                 app:layout_constraintStart_toStartOf="@+id/store_item_distance_tv"
                 app:layout_constraintTop_toBottomOf="@+id/store_item_distance_tv" />
 
