@@ -17,6 +17,8 @@ import com.gachonumc.threejeon.Platform.Baemin.BaeminStoreList
 import com.gachonumc.threejeon.Platform.Baemin.BaeminStoreListView
 import com.gachonumc.threejeon.*
 import com.gachonumc.threejeon.databinding.FragmentStoreBinding
+
+
 /*
 class StoreActivity: AppCompatActivity(), BaeminStoreListView {
 

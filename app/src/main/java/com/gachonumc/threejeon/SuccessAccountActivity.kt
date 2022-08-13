@@ -16,7 +16,7 @@ class SuccessAccountActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.btnConfirm.setOnClickListener {
-            startActivity(Intent(this, LoginActivity::class.java))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
     }
 }

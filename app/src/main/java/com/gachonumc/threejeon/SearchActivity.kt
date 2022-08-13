@@ -4,14 +4,12 @@ import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.gachonumc.threejeon.Platform.Baemin.*
-import com.gachonumc.threejeon.Platform.Coupang.CoupangSearch
 import com.gachonumc.threejeon.Platform.Coupang.CoupangSearchList
 import com.gachonumc.threejeon.Platform.Coupang.CoupangSearchListView
-import com.gachonumc.threejeon.Platform.Yogiyo.YogiyoSearch
 import com.gachonumc.threejeon.Platform.Yogiyo.YogiyoSearchListView
 import com.gachonumc.threejeon.Platform.Yogiyo.YogiyoSearchStoreList
 import com.gachonumc.threejeon.databinding.ActivitySearchBinding
-import com.gachonumc.threejeon.store.StoreActivity
+import com.gachonumc.threejeon.store.StoreFragment
 
 //intent로 어떤걸 검색하는지 주고, if로 나누면 될듯
 class SearchActivity : AppCompatActivity(), BaeminSearchView, YogiyoSearchListView, CoupangSearchListView, BaeminStoreMenuView {
@@ -29,7 +27,7 @@ class SearchActivity : AppCompatActivity(), BaeminSearchView, YogiyoSearchListVi
         setContentView(binding.root)
 
         binding.searchBack.setOnClickListener {
-            startActivity(Intent(this, StoreActivity::class.java))
+            startActivity(Intent(this, StoreFragment::class.java))
         }
     }
 
