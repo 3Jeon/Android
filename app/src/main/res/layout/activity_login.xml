@@ -72,14 +72,6 @@
         tools:ignore="MissingConstraints" />
 
     <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/kakao_login_btn"
-        tools:layout_editor_absoluteX="86dp"
-        tools:layout_editor_absoluteY="445dp" />
-
-    <ImageView
         android:id="@+id/imageView10"
         android:layout_width="20dp"
         android:layout_height="20dp"
