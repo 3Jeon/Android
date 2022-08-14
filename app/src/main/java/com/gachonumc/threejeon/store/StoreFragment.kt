@@ -126,7 +126,7 @@ class StoreFragment : Fragment(), BaeminStoreListView{
 
     override fun onResume() {
         super.onResume()
-        //baeminInformation(category, lat, lng, sort) //
+        // baeminInformation(category, lat, lng, sort) //
     }
 
     override fun baeminStoreListSuccess(result: Array<BaeminStoreList>) {
