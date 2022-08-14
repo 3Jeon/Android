@@ -131,6 +131,7 @@ class StoreFragment : Fragment(), BaeminStoreListView{
         var lng : Double = 127.01613952491023
         var sort : String = "rank"
         baeminInformation(category, lat, lng, sort) //
+
     }
 
     override fun baeminStoreListSuccess(result: Array<BaeminStoreList>) {

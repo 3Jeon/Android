@@ -55,20 +55,16 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
-    <View
-        android:id="@+id/view3"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/store_menu_rv"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/gray"
-        app:layout_constraintTop_toBottomOf="@id/choice_menu" />
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choice_menu"
+        tools:layout_editor_absoluteX="0dp">
 
-    <FrameLayout
-        android:id="@+id/store_menu_fl"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    </androidx.recyclerview.widget.RecyclerView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
