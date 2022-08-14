@@ -118,7 +118,8 @@ class MenuFragment : Fragment(), BaeminStoreMenuView {
 
     override fun onResume() {
         super.onResume()
-        //baeminInformation(category, lat, lng, sort) //
+        var restaurant_id : Int = 123124 // 이 값에 가게정보를 넣으면 됨
+        baeminStoreMenuIn(restaurant_id) //
     }
 
 

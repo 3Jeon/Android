@@ -126,7 +126,12 @@ class StoreFragment : Fragment(), BaeminStoreListView{
 
     override fun onResume() {
         super.onResume()
-        // baeminInformation(category, lat, lng, sort) //
+        var category : String = "치킨"
+        var lat : Double = 37.61254138380022
+        var lng : Double = 127.01613952491023
+        var sort : String = "rank"
+        baeminInformation(category, lat, lng, sort) //
+
     }
 
     override fun baeminStoreListSuccess(result: Array<BaeminStoreList>) {
@@ -149,6 +154,12 @@ class StoreFragment : Fragment(), BaeminStoreListView{
 
     override fun baeminStoreListFailure(code: Int, message: String) {
         TODO("Not yet implemented")
+    }
+
+    private fun baeminInformation(category : String, lat : Double, lng : Double, sort : String){
+        val baeminStoreListView = BaeminService()
+        baeminStoreListView.setBaeminStoreService(this)
+        baeminStoreListView.getBaeminStoreService(category, lat, lng, sort)
     }
 
 }
