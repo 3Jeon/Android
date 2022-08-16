@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.gachonumc.threejeon.SearchActivity
 import com.gachonumc.threejeon.databinding.ActivityMymenuBinding
 import com.gachonumc.threejeon.menu.MenuFragment
 
