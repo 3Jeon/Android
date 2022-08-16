@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.gachonumc.threejeon.databinding.ItemMenuBinding
-import com.gachonumc.threejeon.databinding.ItemStoreBinding
 
 class MenuAdapter() : RecyclerView.Adapter<MenuAdapter.ViewHolder>() {
 
