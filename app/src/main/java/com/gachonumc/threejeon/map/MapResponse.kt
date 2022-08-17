@@ -18,3 +18,18 @@ data class MapInfo(
     val taxiFare : Int,
     val tollFare : Int
 )
+
+data class GeocodeResponse(
+    val code : Int,
+    val isSuccess : Boolean,
+    val message : String,
+    val result : GeoInfo
+)
+
+data class GeoInfo(
+    val distance: Double,
+    val jibunAddress : String,
+    val roadAddress : String,
+    val x : Double,
+    val y : Double
+)
