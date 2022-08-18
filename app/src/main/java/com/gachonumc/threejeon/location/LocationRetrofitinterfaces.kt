@@ -16,12 +16,22 @@ interface LocationRetrofitinterfaces {
         @Query("userId") userId: Int
     ): Call<ListResponse>
 
-    @PATCH("/location/add")
+    @POST("/location/add")
     fun getAddLocation(
         @Body postUserLocationReq : locaAdd,
         @Query("userId") userId : Int
     ): Call<AddResponse>
 
+    @POST("/location/change/default")
+    fun getChangeLocation(
+        @Body postUserLocationReq : locaAdd,
+        @Query ("userId") userId: Int
+    ): Call<ChangeLocaResponse>
+
+    @PATCH("/location/delete")
+    fun getDeleteLocation(
+        @Query("locationId") locationId : Int
+    ): Call<DeleteChangeResponse>
 
 }
 
