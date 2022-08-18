@@ -36,3 +36,10 @@ data class ListInfo(
     val updatedAt : String,
     val userId : Int
 )
+
+data class AddResponse(
+    val code : Int,
+    val isSuccess : Boolean,
+    val message : String,
+    val result : String
+)

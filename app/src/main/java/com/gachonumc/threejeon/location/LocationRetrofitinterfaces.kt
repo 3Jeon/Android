@@ -1,8 +1,7 @@
 package com.gachonumc.threejeon.location
 
 import retrofit2.Call
-import retrofit2.http.GET
-import retrofit2.http.Query
+import retrofit2.http.*
 import java.sql.RowId
 
 interface LocationRetrofitinterfaces {
@@ -16,4 +15,18 @@ interface LocationRetrofitinterfaces {
     fun getList(
         @Query("userId") userId: Int
     ): Call<ListResponse>
+
+    @PATCH("/location/add")
+    fun getAddLocation(
+        @Body postUserLocationReq : locaAdd,
+        @Query("userId") userId : Int
+    ): Call<AddResponse>
+
+
 }
+
+data class locaAdd(
+    val address : String,
+    val lat : Double,
+    val lng : Double
+)
