@@ -9,3 +9,8 @@ interface ListView{
     fun listInfoSuccess(result : ListInfo)
     fun listInfoFailure(code: Int, messgae: String)
 }
+
+interface LocaAddView{
+    fun locaAddSuccess(result : String)
+    fun locaAddFailure(code: Int, messgae: String)
+}
