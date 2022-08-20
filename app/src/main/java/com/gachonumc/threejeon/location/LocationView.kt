@@ -10,7 +10,17 @@ interface ListView{
     fun listInfoFailure(code: Int, messgae: String)
 }
 
-interface LocaAddView{
-    fun locaAddSuccess(result : String)
+interface LocaAddView {
+    fun locaAddSuccess(result: String)
     fun locaAddFailure(code: Int, messgae: String)
+}
+
+interface LocaChangeView{
+    fun locaChangeSuccess(result : LocaChangeInfo)
+    fun locaChangeFailure(code: Int, messgae: String)
+}
+
+interface LocaDeleteView{
+    fun locaDeleteSuccess(result : String)
+    fun locaDeleteFailure(code: Int, messgae: String)
 }

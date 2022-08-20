@@ -43,3 +43,29 @@ data class AddResponse(
     val message : String,
     val result : String
 )
+
+data class ChangeLocaResponse(
+    val code : Int,
+    val isSuccess : Boolean,
+    val message : String,
+    val result : LocaChangeInfo
+)
+
+data class LocaChangeInfo(
+    val address: String,
+    val createdAt: String,
+    val defaultAddress :Boolean,
+    val id: Int,
+    val lat : Double,
+    val lng : Double,
+    val status: Boolean,
+    val updatedAt: String,
+    val userId: Int
+)
+
+data class DeleteChangeResponse(
+    val code : Int,
+    val isSuccess : Boolean,
+    val message : String,
+    val result : String
+)

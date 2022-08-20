@@ -1,5 +1,6 @@
 package com.gachonumc.threejeon.location
 
+import android.net.Network
 import com.gachonumc.threejeon.NetworkModule
 import com.gachonumc.threejeon.map.MapInfo
 import retrofit2.Call
@@ -13,6 +14,8 @@ class LocationService{
     private lateinit var defaultView: DefaultView
     private lateinit var listView: ListView
     private lateinit var locaAddView: LocaAddView
+    private lateinit var locaChangeView : LocaChangeView
+    private lateinit var locaDeleteView: LocaDeleteView
 
     fun setDefaultService(defaultView: DefaultView){
         this.defaultView = defaultView
@@ -22,6 +25,12 @@ class LocationService{
     }
     fun setLocaAddService(locaAddView: LocaAddView){
         this.locaAddView = locaAddView
+    }
+    fun setLocaChangeService(locaChangeView: LocaChangeView){
+        this.locaChangeView = locaChangeView
+    }
+    fun setLocaDeleteService(locaDeleteView: LocaDeleteView){
+        this.locaDeleteView = locaDeleteView
     }
 
     fun getDefaultService(userId : Int){
@@ -64,7 +73,7 @@ class LocationService{
 
     }
 
-    fun getlocaAddService(postUserLocationReq: locaAdd, userId: Int){
+    fun getLocaAddService(postUserLocationReq: locaAdd, userId: Int){
         val locaAddService = NetworkModule.getInstance()?.create(LocationRetrofitinterfaces::class.java)
         locaAddService?.getAddLocation(postUserLocationReq, userId)?.enqueue(object : Callback<AddResponse>{
             override fun onResponse(call: Call<AddResponse>, response: Response<AddResponse>) {
@@ -76,6 +85,48 @@ class LocationService{
             }
 
             override fun onFailure(call: Call<AddResponse>, t: Throwable) {
+                TODO("Not yet implemented")
+            }
+
+        })
+    }
+
+    fun getLocaChangeService(postUserLocationReq: locaAdd, userId: Int){
+        val locaChangeService = NetworkModule.getInstance()?.create(LocationRetrofitinterfaces::class.java)
+        locaChangeService?.getChangeLocation(postUserLocationReq, userId)?.enqueue(object : Callback<ChangeLocaResponse>{
+            override fun onResponse(
+                call: Call<ChangeLocaResponse>,
+                response: Response<ChangeLocaResponse>
+            ) {
+                val locaChangeResponse : ChangeLocaResponse = response.body()!!
+                when(locaChangeResponse.code){
+                    1000 -> locaChangeView.locaChangeSuccess(locaChangeResponse.result)
+                    else -> locaChangeView.locaChangeFailure(locaChangeResponse.code, locaChangeResponse.message)
+                }
+            }
+
+            override fun onFailure(call: Call<ChangeLocaResponse>, t: Throwable) {
+                TODO("Not yet implemented")
+            }
+
+        })
+    }
+
+    fun getLocaDeleteService(locationId : Int){
+        val locaDeleteService = NetworkModule.getInstance()?.create(LocationRetrofitinterfaces::class.java)
+        locaDeleteService?.getDeleteLocation(locationId)?.enqueue(object : Callback<DeleteChangeResponse>{
+            override fun onResponse(
+                call: Call<DeleteChangeResponse>,
+                response: Response<DeleteChangeResponse>
+            ) {
+                val locaDeleteResponse : DeleteChangeResponse = response.body()!!
+                when(locaDeleteResponse.code){
+                    1000 -> locaDeleteView.locaDeleteSuccess(locaDeleteResponse.result)
+                    else -> locaDeleteView.locaDeleteFailure(locaDeleteResponse.code, locaDeleteResponse.message)
+                }
+            }
+
+            override fun onFailure(call: Call<DeleteChangeResponse>, t: Throwable) {
                 TODO("Not yet implemented")
             }
 
